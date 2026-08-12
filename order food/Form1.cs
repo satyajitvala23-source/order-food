@@ -20,7 +20,7 @@ namespace order_food
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-        
+            
             if (comboBox2.SelectedIndex == 0)
             {
                 total = 250;
@@ -188,6 +188,49 @@ namespace order_food
                 panel1.Visible = false;
                 panel4.Visible = false;
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            textBox3.Text = "";
+
+
+        }
+
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox6.Text = "";
+            textBox5.Text = "";
+            checkBox6.Checked = false;
+            checkBox5.Checked = false;
+            checkBox4.Checked = false;
+            radioButton4.Checked = false;
+            radioButton3.Checked = false;
+            textBox4.Text = "";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            textBox9.Text = "";
+            textBox8.Text = "";
+            checkBox9.Checked = false;
+            checkBox8.Checked = false;
+            checkBox7.Checked = false;
+            radioButton6.Checked = false;
+            radioButton5.Checked = false;
+            textBox7.Text = "";
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
