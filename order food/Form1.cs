@@ -200,7 +200,8 @@ namespace order_food
             radioButton1.Checked = false;
             radioButton2.Checked = false;
             textBox3.Text = "";
-
+            panel1.Visible = false;
+            comboBox1.Text = "";
 
         }
 
@@ -219,6 +220,8 @@ namespace order_food
             radioButton4.Checked = false;
             radioButton3.Checked = false;
             textBox4.Text = "";
+            panel4.Visible= false;
+            comboBox1.Text = "";
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -231,6 +234,13 @@ namespace order_food
             radioButton6.Checked = false;
             radioButton5.Checked = false;
             textBox7.Text = "";
+            panel7.Visible = false;
+            comboBox1.Text = "";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

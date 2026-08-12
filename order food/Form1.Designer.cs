@@ -32,6 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -51,6 +52,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -70,6 +72,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
@@ -88,15 +91,13 @@
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -163,6 +164,18 @@
             this.panel1.Size = new System.Drawing.Size(270, 474);
             this.panel1.TabIndex = 3;
             this.panel1.Visible = false;
+            // 
+            // button4
+            // 
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(139, 379);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(82, 38);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "CLEAR";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label10
             // 
@@ -368,6 +381,16 @@
             this.panel4.TabIndex = 4;
             this.panel4.Visible = false;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(146, 379);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 38);
+            this.button5.TabIndex = 13;
+            this.button5.Text = "CLEAR";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -568,6 +591,16 @@
             this.panel7.TabIndex = 13;
             this.panel7.Visible = false;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(155, 379);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 38);
+            this.button6.TabIndex = 13;
+            this.button6.Text = "CLEAR";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -745,6 +778,19 @@
             this.label25.TabIndex = 0;
             this.label25.Text = "FAST FOOD";
             // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Image = global::order_food.Properties.Resources.icons8_exit_40;
+            this.button7.Location = new System.Drawing.Point(591, 576);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(93, 46);
+            this.button7.TabIndex = 14;
+            this.button7.Text = "EXIT";
+            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // button3
             // 
             this.button3.Image = global::order_food.Properties.Resources.icons8_bill_30;
@@ -797,18 +843,6 @@
             this.label18.Size = new System.Drawing.Size(70, 70);
             this.label18.TabIndex = 4;
             // 
-            // button4
-            // 
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(139, 379);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(82, 38);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "CLEAR";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // button1
             // 
             this.button1.Image = global::order_food.Properties.Resources.icons8_bill_30;
@@ -835,31 +869,12 @@
             this.label4.Size = new System.Drawing.Size(70, 70);
             this.label4.TabIndex = 4;
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(146, 379);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 38);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "CLEAR";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(155, 379);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 38);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "CLEAR";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 557);
+            this.ClientSize = new System.Drawing.Size(1300, 634);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.comboBox1);
@@ -962,6 +977,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
 
